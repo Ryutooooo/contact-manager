@@ -23,7 +23,7 @@
   "include": [
     "./src/**/*.ts",
     "./test/**/*.ts",
-    "./types/**/*.d.ts"
+    "./types/**/*.d.ts", "src/contact-detail.ts"
   ],
   "atom": {
     "rewriteTsconfig": false
