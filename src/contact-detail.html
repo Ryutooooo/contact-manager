@@ -7,8 +7,35 @@
       <form role="form">
         <div class="form-group">
           <label class="col-sm-3 col-form-label">First Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="first name" value.bind="contact.firstName">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-3 col-form-label">Last name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="last name" value.bind="contact.lastName">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-3 col-form-label">Email</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="email" value.bind="contact.email">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="col-sm-3 col-form-label">Phone Number</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="phone number" value.bind="contact.phoneNumber">
+          </div>
         </div>
       </form>
+      <div>
+        <button class="btn btn-success float-right" click.delegate="save()" disabled.bind="!canSave">Save</button>
+      </div>
     </div>
   </div>
 </template>
